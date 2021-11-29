@@ -2,16 +2,52 @@
   -var(--textcolor): black;
 }
 
+header{
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+  justify-content: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
 body {
   display: flex;
   flex-direction: column;
   font-family: "Libre Franklin";
-  font-size: 0.9em;
   line-height: 130%;
   color: #506070;
   background-color: white ;
 }
 
+.font_large{
+  font-size: 1.85em;
+  line-height: 1.1em;
+  font-family: Comfortaa;
+  color: #2b112d;
+}
+.font_medium{
+   font-size: 1.1em;
+ }
+.fontfooter {
+  font-size:0.7em;
+  line-height:125%
+ } 
+ a {
+   color: var(--textcolor);
+   text-decoration: none;
+ }
+ a:hover {
+   color:#2b112d;
+   font-style:oblique;
+   text-decoration:none; 
+ }
+ 
+.vhmin {
+  min-height: 85vh;
+ }
+ 
 .flex-container-horizontal {
   display: flex;
   flex-direction: row;
@@ -19,10 +55,9 @@ body {
   justify-content: center;
   text-align: center;
 }
-
 .flex-container-horizontal > div {
-  margin: 0px;
-  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .flex-container-vertical {
@@ -30,52 +65,12 @@ body {
   flex-direction: column;
   margin-left: 10px;
   margin-right: 15px;
+  flex: 1 0 auto;
+  overflow-y: auto;
 }
-
 .flex-container-vertical > div {
-  margin: 10px;
+  margin-left: 10px;
   padding: 5px;
-}
-
-.content{
- flex: 1 0 auto;
- overflow-y: auto;
-}
-
-.fontfooter {
- font-size:0.7em;
- line-height:125%
-}
-
-.fontlink:link {
- color: var(--textcolor);
- text-decoration: none;
-}
-.fontlink:visited {
- color: var(--textcolor);
- text-decoration: none;
-}
-.fontlink:hover {
-  color: var(--textcolor);
-  text-decoration: none;
-}
-.fontlink:active {
-color: var(--textcolor);
-text-decoration: none;
-}
-
-.hmin70vh {
- min-height: 70vh;
-}
-
-.font_medium{
-  font-size: 1.2em;
-  line-height: 0.3em;
-}
-
-.font_large{
-  font-size: 2.5em;
-  line-height: 0.8em;
 }
 
 @media screen and (max-width:620px) {
