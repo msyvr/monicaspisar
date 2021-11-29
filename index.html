@@ -45,8 +45,13 @@
 
 <body>
   <div class="flex-container-vertical vhmin">
-    <div class="flex-container-horizontal" style="margin-top:50px">
-      <p>My latest project: While at <a href="https://recurse.com" target="_blank">The Recurse Center*</a>, I wrote a <a href="https://github.com/msyvr/raytracer" target="_blank">ray tracing engine</a>.</p>
+    <div class="flex-container-horizontal font_large" style="margin-top: 50px; justify-content: left;">
+      In the lab: software experiments
+    </div>
+    <div class="flex-container-vertical" style="margin-top:10px">
+      <p>2021/11: A <a href="https://github.com/msyvr/raytracer" target="_blank">ray tracing engine</a> I wrote during my time at <a href="https://recurse.com" target="_blank">The Recurse Center*</a>.</p>
+      <p>Digging into how photo-realistic images are created for movies and games, the key take away from my research ultimately didn't anchor on <a href="https://cs.dartmouth.edu/wjarosz/publications/novak18monte.html" target="_blank">algorithms for modeling optical interactions</a> but on the <a href="https://developer.nvidia.com/nvidia-ampere" target="_blank">sophisticated hardware (supported by machine learning)</a> that's been developed in recent years to support the inherent computational complexity. The ray tracing renderer I wrote is basic in the sense of not being tailored to leverage GPU capabilities, yet gave me an appreciation for the impact of cutting edge research in this space.</p>
+      <p>Realistic images at high frame rates for games rely on <a href="https://www.youtube.com/watch?v=2GYXuM10riw" target="_blank">innovative approaches stitched together to meet stringent technical constraints</a>, and exquisite animations and special effects in movies are made possible by a combination of <a href="https://sciencebehindpixar.org/pipeline/rendering" target="_blank">advanced hardware and software supported by dedicated server farms</a>. And both applications depend on sophisticated GPU platforms optimized for ray tracing.</p>
     </div>
     <div class="flex-container-horizontal" style="margin-top: 5px; margin-bottom: 20px">
       <a href="https://github.com/msyvr/raytracer" target="_blank"><img src="images/example_shadowsdiffuse.png" alt="ray-traced spheres with shadows" style="width:500px;"></a>
@@ -55,7 +60,7 @@
       *RC is a haven for curious, self-directed software explorers. Feel free to get in touch if you're considering applying.
     </div>
   </div>
-  <div class="fontfooter" >
+  <div class="fontfooter" style="margin-top: 30px;">
     Site: MIT License / Copyright 2021 Monica Spisar
   </div>
 </body>
