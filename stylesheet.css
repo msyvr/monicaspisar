@@ -16,14 +16,15 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Libre Franklin";
+  font-size: medium;
   line-height: 130%;
   color: #506070;
   background-color: white ;
 }
 
 .font_large{
-  font-size: 1.85em;
-  line-height: 1.1em;
+  font-size: 1.85rem;
+  line-height: 1.1rem;
   font-family: Comfortaa;
   color: #2b112d;
 }
@@ -36,10 +37,11 @@ body {
  } 
  a {
    color: var(--textcolor);
+   font-weight: bolder;
    text-decoration: none;
  }
  a:hover {
-   color:#2b112d;
+   color:#52227d;
    font-style:oblique;
    text-decoration:none; 
  }
