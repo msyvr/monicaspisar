@@ -16,15 +16,14 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Libre Franklin";
-  font-size: medium;
   line-height: 130%;
   color: #506070;
   background-color: white ;
 }
 
 .font_large{
-  font-size: 1.85rem;
-  line-height: 1.1rem;
+  font-size: 1.85em;
+  line-height: 1.1em;
   font-family: Comfortaa;
   color: #2b112d;
 }
