@@ -17,7 +17,7 @@
     <a href="mailto:monicaspisar@gmail.com" target="_blank"><img src="images/Avatar_ms_bw.jpg" alt="Monica's avatar" style="width:80px; height:80px"></a>
   </div>
   <div class="flex-container-vertical">
-    <div class="flex-container-horizontal font_large" style="margin-left: 16px; justify-content: left;">
+    <div class="font_large" style="margin-left: 16px; justify-content: left;">
       Monica Spisar
     </div>
     <div class="flex-container-horizontal" style="justify-content: left;">
@@ -44,36 +44,24 @@
 </header>
 
 <body>
-  <div class="flex-container-vertical vhmin">
-    <div class="flex-container-horizontal font_large" style="margin-top: 50px; margin-left:9px; justify-content: left;">
-      code:review
-    </div>
-    <div class="flex-container-vertical" style="margin-top:10px">
-      <p>2021/11: A few thoughts on a <a href="https://github.com/msyvr/raytracer" target="_blank">ray tracing engine</a> written during my time at <a href="https://recurse.com" target="_blank">The Recurse Center*</a></p>
+  <div class="flex-container-body">
+    <div>
+      <p class="font_large">Recurse Center F2'21</p>
+      <p>I wrote a <a href="https://github.com/msyvr/raytracer" target="_blank">ray tracing engine</a> while at <a href="https://recurse.com" target="_blank">The Recurse Center*</a>.</p>
       <p>Digging into how photo-realistic images are created for movies and games, the deep challenges turned out not to be pinned to developing <a href="https://pbr-book.org/3ed-2018/Introduction/Photorealistic_Rendering_and_the_Ray-Tracing_Algorithm" target="_blank">algorithms for modeling optical interactions</a> but, rather, the <a href="https://developer.nvidia.com/nvidia-ampere" target="_blank">phenomenal hardware (supported by machine learning)</a> required to handle the computational complexity of ray and path tracing.</p>
-      <p>The ray tracing renderer I wrote is basic in the sense of not being tailored to leverage GPU capabilities, which is a much bigger task than I was prepared to take on for this fun side project. The rapid fire intro to the research that's pushing the boundaries for what's possible in real world applications was nonetheless fascinating.</p>
-      <p>Realistic images at high frame rates for games rely on <a href="https://www.youtube.com/watch?v=2GYXuM10riw" target="_blank">innovative approaches stitched together to meet stringent technical constraints</a>, and exquisite animations and special effects in movies are made possible by a combination of <a href="https://sciencebehindpixar.org/pipeline/rendering" target="_blank">advanced hardware and software supported by dedicated computer clusters (aka render farms)</a>. And both applications depend on sophisticated GPU platforms optimized for ray tracing.</p>
-    </div>
-    <div class="flex-container-horizontal" style="margin-top: 15px; margin-bottom: 20px">
-      <a href="https://github.com/msyvr/raytracer" target="_blank"><img src="images/example_shadowsdiffuse.png" alt="ray-traced spheres with shadows" style="width:500px;"></a>
-    </div>
-    <div class="flex-container-horizontal" style="font-style:italic; font-size: smaller;">
-      *RC is a haven for curious, self-directed software explorers. Feel free to get in touch if you're considering applying.
-    </div>
-    <div class="flex-container-vertical" style="margin-top:10px">
-      <p>2021/08: A few thoughts on <a href="https://gamingaging.substack.com/p/longevity-home" target="_blank">mainstreaming longevity</a></p>
-      <p>The landscape for <a href="https://gamingaging.substack.com/p/longevity-home" target="_blank">delivering longevity interventions at scale</a> by mainstreaming biohacking.</p>
-    </div>
-    <div class="flex-container-vertical" style="margin-top:10px">
-      <p>2018/01: A few thoughts on <a href="https://msyvr.medium.com/how-medical-imaging-works-59e116ecdbe5" target="_blank">understanding medical imaging</a></p>
-      <p><a href="https://msyvr.medium.com/how-medical-imaging-works-59e116ecdbe5" target="_blank">'Seeing within': how medical imaging works</a> - an overview for non-experts.</p>
-    </div>
-    <div class="flex-container-vertical" style="margin-top:10px">
-      <p>2017/11: A few thoughts on <a href="https://msyvr.medium.com/picture-perfect-ai-medical-imaging-f57eeb2b4b32" target="_blank">AI in radiology</a></p>
-      <p><a href="https://msyvr.medium.com/picture-perfect-ai-medical-imaging-f57eeb2b4b32" target="_blank">Artificial intelligence in medical imaging is a controversial topic — up for debate are questions regarding its implementation (from both technical and regulatory standpoints), ultimate potential (presuming it has the theoretical potential to do better, will it do better in practice, and how might it alter clinical processes?), and impact on t​he future role of clinicians.</a></p>
+      <div style="margin-top: 25px; margin-bottom: 25px; display: flex; justify-content: center;">
+        <a href="https://github.com/msyvr/raytracer" target="_blank"><img src="images/example_shadowsdiffuse.png" alt="ray-traced spheres with shadows" style="width:100%; max-width: 800px;"></a>
+      </div>
+      <p>The code models light interactions including ambient, diffuse surface scattering (Lambertian), and reflection/refraction (Fresnel, computed recursively). It's not tailored to leverage GPU capabilities, but I did get a rapid fire intro to real world ray and path tracing implementations and research - which is super cool.</p>
+      <p>Realistic images at high frame rates for games rely on <a href="https://www.youtube.com/watch?v=2GYXuM10riw" target="_blank">innovative approaches stitched together to meet stringent technical constraints</a>, and exquisite animations and special effects in movies are made possible by a combination of <a href="https://sciencebehindpixar.org/pipeline/rendering" target="_blank">advanced hardware and software supported by dedicated computer clusters (aka render farms)</a>. And both applications depend on sophisticated <a href="https://developer.nvidia.com/rtx/raytracing" target="_blank">GPU platforms optimized for ray tracing</a>.</p>
+      <div style="font-style:italic; font-size: smaller;">
+        *RC is a haven for curious, self-directed software explorers. Feel free to get in touch if you're considering applying.
+      </div>    
+      <p class="font_large">Etc</p>
+      <p>I've previously written about <a href="https://gamingaging.substack.com/p/longevity-home" target="_blank">gaming aging</a> on <a href="https://gamingaging.substack.com" target="_blank">Substack</a> and medical imaging - <a href="https://msyvr.medium.com/picture-perfect-ai-medical-imaging-f57eeb2b4b32" target="_blank">with</a> and <a href="https://msyvr.medium.com/how-medical-imaging-works-59e116ecdbe5" target="_blank">without</a> AI - on <a href="https://msyvr.medium.com/" target="_blank">Medium</a>.</p>
     </div>
   </div>
-  <div class="fontfooter" style="margin-top: 30px;">
+  <div class="fontfooter" style="margin-left: 10px; margin-top: 30px;">
     Site: MIT License / Copyright 2021 Monica Spisar
   </div>
 </body>
