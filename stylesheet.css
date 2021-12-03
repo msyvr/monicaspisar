@@ -13,10 +13,8 @@ header{
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   font-family: "Libre Franklin";
-  line-height: 130%;
+  line-height: 150%;
   color: #506070;
   background-color: white ;
 }
@@ -53,24 +51,19 @@ body {
   display: flex;
   flex-direction: row;
   flex: 0 1 auto;
-  justify-content: center;
-  text-align: center;
 }
 .flex-container-horizontal > div {
-  margin-left: 5px;
   margin-right: 5px;
 }
 
 .flex-container-vertical {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  margin-right: 15px;
   flex: 1 0 auto;
   overflow-y: auto;
 }
 .flex-container-vertical > div {
-  margin-left: 10px;
+  margin-left: 15px;
   padding: 5px;
 }
 
@@ -79,6 +72,7 @@ body {
   flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 30px;
   flex: 1 0 auto;
   overflow-y: auto;
   min-height: 85vh;
